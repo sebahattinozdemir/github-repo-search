@@ -1,0 +1,41 @@
+/* RepositoryTable.module.css */
+.tableContainer {
+    overflow-x: auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 150px; 
+  }
+  
+  th {
+    background-color: #f4f4f4;
+    cursor: pointer;
+  }
+  
+  th:hover {
+    background-color: #e0e0e0;
+  }
+  
+  @media (max-width: 600px) {
+    .table {
+      display: block;
+      overflow-x: auto;
+    }
+  
+    th, td {
+      width: auto;
+    }
+  }
+  
